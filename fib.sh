@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# comment
+
 f0=1
 f1=1
 f2=0
