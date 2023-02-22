@@ -8,12 +8,14 @@ Git is a tool for managing changes in projects on which multiple people work. We
 - Add files to your local copy of the repo and "commit" (save) the changes
 - "Push" your changes to the main branch
 - "Pull" changes made by others to your local machine
-- Create a "branch", make changes, commit and push them
+- Make use of branches create a "branch", make changes, commit and push them
 - Open a "pull request", others can review your changes and decide if they are ok
 - "Merge" your branch to the main branch
 
 
 ### Practice
+- install git (maybe also install github cli)
+- create a token, maybe save it as a permanent env variable
 - create a repo in your github account
   - ```git config```
 - clone the repo on your machines (```git clone <repo_url>```)

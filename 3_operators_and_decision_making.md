@@ -18,7 +18,7 @@ echo "Sum : $val"
 |----------|---------------------------------------------------------------------------------|
 | +        | Addition: `expr $x + $y` will give the sum of x and y.                          |
 | -        | Subtraction: `expr $x - $y` will subtract y from x.                             |
-| *        | Multiplication: `expr $x * $y` will give the produce of x and y.                |
+| *        | Multiplication: `expr $x \* $y` will give the produce of x and y.                |
 | /        | Division: `expr $x / $y` will give the quotient of x divided by y.              |
 | %        | Modulus: `expr $x % $y` will give the reminder of x divided by y.               |
 | ==       | Equality: [ $x == $y ] will return true is x equals y, false otherwise.         |
