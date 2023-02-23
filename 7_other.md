@@ -14,7 +14,3 @@ echo "`expr 1 + 2`"        # 3
 echo "$(expr 1 + 2)"       # 3
 expr 1 + 2                 # 3
 ```
-
-## crontab
-
-For recurrent tasks, linux provides a daemon that can run scripts based on a fixed schedule defined with ```crontab -e```. You will find the syntax in the opened file.
