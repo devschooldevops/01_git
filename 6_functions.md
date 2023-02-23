@@ -21,6 +21,8 @@ Functions can take parameters and return values:
 #!/bin/bash
 
 my_func () {
+# here, $1 and $2 are the first two arguments of the function, not the script
+# in order to use script arguments in the function, they have to be passed as arguments to the function
    echo "Hello $1 and $2"
    return 1
 }

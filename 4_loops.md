@@ -11,16 +11,17 @@ do
    Statement(s) to be executed if command is true
 done
 ```
+
 Example:
 ```bash
 #!/bin/bash
 
 a=0
 
-while [ $a -lt 10 ]    # if this is false, the loop ends
+while [ $a -lt 10 ]     # if this is false, the loop ends
 do
-   echo $a             # show the current value of a
-   a=`expr $a + 1`     # increment the value of a
+   echo $a              # show the current value of a
+   a=$(expr $a + 1)     # increment the value of a
 done
 ```
 
@@ -31,6 +32,7 @@ do
    Statement(s) to be executed for every word.
 done
 ```
+
 Example:
 ```bash
 #!/bin/bash
@@ -40,12 +42,12 @@ do
    echo $var
 done
 
-for var in `ls -a ~`
+for var in $(ls -a ~)
 do
    echo $var
 done
 
-for var in `cat /etc/group`
+for var in $(cat /etc/group)
 do
    echo $var
 done
@@ -67,13 +69,14 @@ do
    echo $a
    if [ $a -eq 5 ]
    then
-      break                 # leave the loop when a reaches 5. After break, control jumps to echo "Done" line
+      break                    # leave the loop when a reaches 5. After break, control jumps to echo "Done" line
    fi
-   a=`expr $a + 1`
+   a=$(expr $a + 1)
 done
 
 echo "Done"
 ```
+
 ### Continue
 ```bash
 #!/bin/bash
@@ -82,15 +85,19 @@ a=0
 
 while [ $a -lt 10 ]
 do
-   a=`expr $a + 1`
+   a=$(expr $a + 1)
    echo $a
 
-   if [ `expr $a % 2` -eq 0 ]
+   if [ $(expr $a % 2) -eq 0 ]
    then
       echo "Number is even"
       continue                 # the rest of the loop statements are ignored and the loop continues with the first statement
    fi
    echo "Number is odd"
-  
 done
 ```
+
+## Practice
+- Fibonacci sequence using loops only! Fibonacci sequence: 0 1 1 2 3 5 8 13 21 ...
+- Prime number using loops only! A prime number has only two divisors, itself and 1.
+- Compute the greatest common demoninator of two numbers.

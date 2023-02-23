@@ -3,11 +3,21 @@
 We'll go through basic arithmetic and logic operators on different variable types.
 Bourne shell didn't originally have any mechanism to perform simple arithmetic operations, but it uses external programs, either **awk** or **expr**. We'll use expr.
 
+## Command substitution
+```bash
+# $(command) or `command`
+
+`command` is deprecated, has problems with nesting and escaped characters
+
+echo "`expr 1 + 2`"        # 3
+echo "$(expr 1 + 2)"       # 3
+expr 1 + 2                 # 3
+```
+
+## Example
 ```bash
 #!/bin/bash
-val=`expr 1 + 1`
-# note the spacing, `expr 1+1` does not work (it returns 1+1)
-# `expr 1 +1` and `expr 1+ 1` don't work either
+val=$(expr 1 + 1)
 echo "Sum : $val"
 2
 ```
@@ -16,20 +26,21 @@ echo "Sum : $val"
 
 | Operator | Description                                                                     | 
 |----------|---------------------------------------------------------------------------------|
-| +        | Addition: `expr $x + $y` will give the sum of x and y.                          |
-| -        | Subtraction: `expr $x - $y` will subtract y from x.                             |
-| *        | Multiplication: `expr $x \* $y` will give the produce of x and y.                |
-| /        | Division: `expr $x / $y` will give the quotient of x divided by y.              |
-| %        | Modulus: `expr $x % $y` will give the reminder of x divided by y.               |
+| +        | Addition: $(expr $x + $y) will give the sum of x and y.                         |
+| -        | Subtraction: $(expr $x - $y) will subtract y from x.                            |
+| *        | Multiplication: $(expr $x \* $y) will give the produce of x and y.               |
+| /        | Division: $(expr $x / $y) will give the quotient of x divided by y.             |
+| %        | Modulus: $(expr $x % $y) will give the reminder of x divided by y.              |
 | ==       | Equality: [ $x == $y ] will return true is x equals y, false otherwise.         |
 | =        | Assignment: x = $y x takes the value of y.                                      |
 | !=       | Negated Equality: [ $x != $y ] will return false is x equals y, true otherwise. |
 
 ```bash
+#!/bin/bash
 A=2
 B=3
 
-echo "`expr $A + $B`"    # 5
+echo "$(expr $A + $B)"    # 5
 ```
 
 ## Relational operators
@@ -155,7 +166,7 @@ esac
 # create file myfile beforehand
 FILENAME=myfile
 # we can also get the filename as input from console
-# read filename
+# read FILENAME
 
 if [ -c $FILENAME ]
 then
@@ -164,3 +175,8 @@ else
    echo "$FILENAME is not a text file"
 fi
 ```
+
+## Practice
+- First degree equation. $y=ax+b$, a and b are fixed values, x is script input. <br/>
+- Compute the volume of a sphere: $V = {4pir^3 \over 3}$, r is the input.
+- Check if a number is divisible by 7 or/and 11. Display each case.
