@@ -34,3 +34,7 @@ You can redirect both stdout and stderr to the same file:
 ./script.sh > file.txt 2>&1
 ```
 This means that stream 2 (stderr) will be redirected to the same file 1 (stdout) is redirected to.
+
+### Practice
+- write a script that writes a random number $0 < n < 100$ to a file.
+- write a script that takes a number, computes its square root. Write the output to a file (stdout). Write to another file if the number is less than 0 (stderr).
