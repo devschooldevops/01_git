@@ -1,6 +1,8 @@
 # Version Control
 Git is a tool for managing changes in projects on which multiple people work. We use git to store our code, scrips, configs and a team can efficiently track changes and adapt to them.
 
+![Git Flow](images/git.png)
+
 ## Git basic overview
 
 - Create a "repository" (project) with a git hosting tool (like Github, Gitlab, Bitbucket)
@@ -8,7 +10,7 @@ Git is a tool for managing changes in projects on which multiple people work. We
 - Add files to your local copy of the repo and "commit" (save) the changes
 - "Push" your changes to the main branch
 - "Pull" changes made by others to your local machine
-- Make use of branches create a "branch", make changes, commit and push them
+- Make use of branches: create a "branch", make changes, commit and push them
 - Open a "pull request", others can review your changes and decide if they are ok
 - "Merge" your branch to the main branch
 
