@@ -9,9 +9,17 @@
 **Secondary teacher**: Liviu
 
 ## Goal
-At the end of the lesson the student should: 
-- be able to write simple bash scripts
-- know what Git is, how to use it and understand the importance of version management
+At the end of the lesson the student should:
+- be able to do basic file processing (grep, tail etc.)
+- be able to do process management
+- know how to use a pipe for output redirection
+- write a simple bash script based on previosly learned commands
+- know what Git it and understand the importance of version management
+- know how to clone a repository
+- know how to create a branch in a repository
+- know how to pull latest changes from a repository
+- know how to push changes on a branch
+- understand why git is useful in project management
     
 ## Resources required/used
 - Red Hat Linux (CentOS 7 DVD)
@@ -31,6 +39,7 @@ At the end of the lesson the student should:
 - 30 min: git
 
 ## Feedback from students
+(generic survey will be setup)
 
 ## Feedback from teachers
-
+(generic survey will be setup)
