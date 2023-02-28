@@ -4,9 +4,9 @@ Users can interact with Bash through the command line, and write scripts to auto
 $ which bash
 /usr/bin/bash            # or /bin/bash
 ```
-Create new script file with nano:
+Create new script file with vim:
 ```bash
-$ nano hello_world.sh
+$ vim hello_world.sh
 ```
 Sample hello world script:
 ```bash
