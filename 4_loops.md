@@ -101,3 +101,4 @@ done
 - Fibonacci sequence using loops only! Fibonacci sequence: 0 1 1 2 3 5 8 13 21 ...
 - Prime number using loops only! A prime number has only two divisors, itself and 1.
 - Compute the greatest common demoninator of two numbers.
+- Go through the sudoers file line by line and dispay non-commented lines

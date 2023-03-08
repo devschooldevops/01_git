@@ -35,3 +35,6 @@ ret=$?
 
 echo "$ret"
 ```
+
+### Practice
+- put some previous exercise in a function

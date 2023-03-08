@@ -11,6 +11,14 @@ From above, we notice we have control over these streams. The simplest change to
 - here, the output of the ps command is the input of the grep command
 - we say they are **piped**, the | character si the UNIX Pipe
 
+## Command chaining with && || ;
+
+```bash
+cmd1 && cmd2 # execute cmd2 only if cmd1 completed successfully
+cmd1 || cmd2 # execute cmd2 only if cmd1 completed with error
+cmd1 ; cmd2  # execute cmd2 after cmd1, output of cmd1 doesn't matter
+```
+
 ## IO Redirects
 
 We can also redirect to/from other files:
