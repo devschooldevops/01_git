@@ -180,4 +180,4 @@ fi
 - First degree equation. $y=ax+b$, a and b are fixed values, x is script input. <br/>
 - Compute the volume of a sphere: $V = {4pir^3 \over 3}$, r is the input.
 - Check if a number is divisible by 7 or/and 11. Display each case.
-- Write a script which take a file name as input and shows what type of file it is.
+- Write a script which takes a file name as input and shows what type of file it is.

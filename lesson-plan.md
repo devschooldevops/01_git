@@ -35,7 +35,6 @@ At the end of the lesson the student should:
 - 25 min: loops
 - 25 min: io redirects
 - 15 min: functions
-- 15 min: command chaining
 - 30 min: git
 
 ## Feedback from students
