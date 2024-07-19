@@ -2,18 +2,14 @@
 
 ## General information
 
-**Duration**: 3 hours (1h theory, 2h practic)
+**Duration**: 1.5 hours
 
 **Primary teacher**: 
 
-**Secondary teacher**: 
+**Secondary teacher** (if needed): 
 
 ## Goal
 At the end of the lesson the student should:
-- be able to do basic file processing (grep, tail etc.)
-- be able to do process management
-- know how to use a pipe for output redirection
-- write a simple bash script based on previosly learned commands
 - know what Git it and understand the importance of version management
 - know how to clone a repository
 - know how to create a branch in a repository
@@ -28,13 +24,17 @@ Example:
 - Local machine; etc
 
 ## Prerequisites
-- what do the students need to have installed before the lesson
-- what do the students need to know before the lesson
+- what do the students need to have installed before the lesson?
+- what do the students need to know before the lesson?
 
 ## Agenda
-Example:
-- 0-5 min: introduction;
-- 5-25 min: slides; etc.
+The agenda must contain:
+- presentation of the technology in the industry (pros and cons)
+- introduction to the technology
+- lesson core (ideally as much practical exercises as possible) **up to the trainer**
+- re-cap of the most important conceps
+- Menti/Kahoot evaluation
+- homework
 
 ## Feedback from students
 (generic survey will be setup)
