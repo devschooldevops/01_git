@@ -41,4 +41,3 @@ The agenda must contain:
 
 ## Feedback from teachers:
 (generic survey will be setup)
-
